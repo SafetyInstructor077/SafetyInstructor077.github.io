@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="fr">
+    
+<head>
+    <script>
+        function selection() {
+        const selecteur = document.getElementById('choix');
+        const monChoix = selecteur[selecteur.selectedIndex];
+        console.log(monChoix.value +' '+ monChoix.text);
+        document.getElementById('nat').innerHTML = monChoix.text;
+    }
+    </script>
+</head>
+
+<body>
+    <!-- 2. Je remarque que notre choix est indiquer à la fin grâce au code JavaScript. -->
+    <form>
+        <p> Choix d'une nationalité :</p>
+            <select id="choix" name="lang" onchange="selection()">
+                <option value="ras">Choisir sa nationalité</option>
+                <option value="fr">Français</option>
+                <option value="zh">Chinois</option>
+                <option value="it">Italien</option>
+            </select>
+        <p> Vous avez choisi comme nationalité : <span id="nat">  </span> </p>
+        </form>
+        
+</body>
+</html>

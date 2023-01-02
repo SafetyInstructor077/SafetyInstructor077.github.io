@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="fr">
+    
+<head>
+    <script>
+        function afficher_valeur(idval,id_aff)
+        {
+            let val = document.getElementById(idval).value;
+            document.getElementById(idval).value = "texte saisi caché";
+            document.getElementById(id_aff).innerHTML = val;
+        }
+    </script>
+</head>
+
+<body>
+    <!-- 1. La partie écrite en langage JavaScript se trouve dans la balise <head> -->
+    <!-- 2. La portion renfermer par la première balise <p>. -->
+    <!-- 3. Cette ligne donne la valeur de idval à val grâce à let -->
+    <!-- 4. Cette ligne definie la vlauer de départ de idval -->
+    <!-- 5. Cette dernière ligne permet de remplacer la valeur de val de idval à id_aff -->
+    <!-- 6. onclick="afficher_valeur('text_O', 'verif')" , elle remplace idval par text_O et id_aff par verif-->
+    <p>
+        texte à saisir : <input type="text" value="saisir ici votre commentaire" id="text_O">
+    </p>
+    <input type="button" value="Bouton à cliquer pour vérifier" onclick="afficher_valeur('text_O','verif')">
+    <p>
+            Vérification. Voici le texte que vous avez saisi : 
+    </p>
+    <p id="verif"></p>   
+</body>
+</html>
