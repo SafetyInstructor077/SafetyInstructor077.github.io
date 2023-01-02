@@ -19,17 +19,17 @@
   
   <body>
     <!-- Navbar Section -->
-    <div id="first">
+    <div id="first" onscroll="showOrHide()">
       <nav class="navbar">
         <div class="navbar__container" >
           <a href="#home" id="navbar__logo">Sheeshers</a>
         </div>
       </nav>
-      <div class="container"><i class="arrow down"></i><br><i class="arrow down"></i></div>
+      <div class="container"><i class="arrow down" onclick="showOrHide()"></i><br><i class="arrow down" onclick="showOrHide()"></i></div>
     </div>
 
     <!-- main section -->
-    <div id="second"></div>
+    <div id="second">
       <div class="main" id="home">
         <div class="main__container">
           <div class="main__img--container">
@@ -54,13 +54,12 @@
           <div class="main__content">
             <h1>Manndon Kahn</h1>
             <h2></h2>
-            <!-- <p>Révision </p> -->
             <button class="main__btn"><a href="manndon/index.html">Visit</a></button>
           </div>
         </div>
       </div>
         
-      <!-- Footer Section -->
+
       <div class="footer__container">
         <section class="social__media">
           <div class="social__media--wrap">

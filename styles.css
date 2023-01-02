@@ -6,27 +6,39 @@
   scroll-behavior: smooth;
 }
 
+body {
+  text-align: center;
+  align-content: center;
+  transition: all 1s ease;
+  background: #131313fb;
+}
+
 /* @media(max-width:2300px){} */
 #first{
+  display: block;
   background-image: url("Images/main/morgan-codes-wallpaper.png");
   background-color: black;
-  height: auto;
   width: 100%;
   background-size: cover;
   background-position-x: center;
   background-position-y: center;
   background-repeat: no-repeat;
   transition: all 1s ease;
+  top: 0;
+}
+
+#second {
+  display: none;
 }
 
 .container{
   padding-top: 70vh;
-  background:transparent;
   height: calc(100vh - 80px);
   min-height: calc(100vh - 100px);
   box-sizing: border-box;
   width: 100%;
   text-align: center;
+  transition: all 1s ease;
 }
 
 .arrow {
@@ -44,7 +56,7 @@
 }
 
 .navbar {
-  background: transparent;
+  background: black;
   background: image;
   height: 80px;
   display: flex;
@@ -54,10 +66,11 @@
   position: sticky;
   top: 0;
   z-index: 9999;
-  transition: all 0.5s ease;
+  transition: all 1s ease;
 }
 
 .navbar.active{
+  display: block !important;
   background: #131313;
   transition: all 0.5s ease;
 }
@@ -244,11 +257,6 @@
 }
 
 /* Main Section */
-#second {
-  display: hidden;
-  transition: all 1s ease-in;
-}
-
 .main {
   background-color: #131313fb;
   height: calc(100vh - 80px);

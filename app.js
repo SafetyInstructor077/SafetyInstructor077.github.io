@@ -77,39 +77,39 @@
 //      element.classList.add(".navbar.active");
 // }    
 
-const navbar = document.querySelector('.navbar');
-const show = window.scrollY > window.innerHeight;
-window.onscroll = () => {
-    if (window.scrollY > show) {
-        navbar.classList.add('active');
-    } else {
-        navbar.classList.remove('active');
-    }
-};
-
-const arrow = document.querySelectorAll('.arrow down');
-function scrollmainpage() {
-    document.getElementById("second").style.display = "show";
-    document.getElementById("first").style.top = "-100px";
-    document.getElementById("second").style.top = "0";
-};
-
-arrow.addEventListener('click', scrollmainpage);
-window.addEventListener('scroll', scrollmainpage);
-
-// const makeInvis = () => {
-//     const big = document.querySelector('#uninvis');
-//     const small = document.querySelector('#invis');
-//     if (window.innerWidth > 1100) {
-//         small.style.display = hidden;
-//         big.style.display = show;
-//     } else if (window.innerWidth < 1100) {
-//         small.style.display = show;
-//         big.style.display = hidden;
+// window.onscroll = () => {
+//     if (window.scrollY > show) {
+//         navbar.classList.add('active');
+//     } else {
+//         navbar.classList.remove('active');
 //     }
 // };
 
-// window.addEventListener('resize', makeInvis,)
+const navbar = document.querySelector('.navbar');
+// const show = window.scrollY > window.innerHeight;
+var first = document.getElementById('first')
+var sec = document.getElementById('second')
+var container = document.querySelector('.container')
+var all = document.querySelector('body')
+function showOrHide() {
+    sec.style.display = "block";
+    all.style.transform = "translateY(calc(-100vh + 80px))";
+    navbar.style.transform = "translateY(calc(100vh - 80px))";
+    // container.style.transform = "translateY(100px)";
+
+    setTimeout(() => {
+        sec.style.transform = "translateY(calc(100vh - 80px))";
+        container.style.display = "none";
+    }, 1000);
+
+//   if (first.style.display === "block") {
+    // sec.style.display = "block";
+    // navbar.classList.toggle('active');
+    // first.style.transform = "translateY(-100vh)";
+    // sec.style.transform = "translateY(-100vh)";
+    // navbar.style.transform = "translateY(100vh)"
+    // sec.style.transform = "translateY(-100vh)";
+}
 
 
 
