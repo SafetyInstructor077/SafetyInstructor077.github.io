@@ -1,0 +1,83 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}  
+
+
+section {
+    min-height: calc(100vh + 20px);
+    display: flex;
+}
+
+section:nth-child(1) {
+    background-color: rgba(0, 0, 0, 0.6);
+    background-image: url("images/music.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-blend-mode: darken;
+
+    justify-content: center;
+    align-items: center;
+}
+
+#titre {
+    color: white;
+    width: 1300px;
+    text-align: center;
+    background-color: rgba(222, 184, 135, 0.8);
+    border-radius: 12px;
+    font-size: 6em;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: black;
+}
+
+#titre:hover {
+    background-color: rgba(222, 184, 135, 0.9);
+}
+
+section:nth-child(2) {
+    background-color: rgba(0, 0, 0, 0.6);
+    background-image: url("images/space.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-blend-mode: darken;
+}
+
+section:nth-child(3) {
+    background-color: rgba(0, 0, 0, 0.2);
+    background-image: url("images/casino_chips.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-blend-mode: darken;
+}
+
+section:nth-child(4) {
+    background-image: linear-gradient(to top, rgb(29, 29, 29), rgb(40, 40, 40));
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.boutton_cercle {
+    display: block;
+    position: relative;
+    height: 250px;
+    width: 250px;
+    bottom: 15vh;
+    background-color: #bbb;
+    border-radius: 50%;;
+}
+
+#image_hugo {
+    height: 150px;
+}
+
+#image_leopoldine {
+    height: 150px;
+}
