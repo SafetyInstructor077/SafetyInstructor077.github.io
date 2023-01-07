@@ -348,16 +348,20 @@ body {
   text-align: center;
 }
 
+.main__img--card img{
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
 .main__img--card {
-  margin: 10px;
-  height: 500px;
-  width: 500px;
+  margin: 0 auto;
+  height: 300px;
+  width: 300px;
   border-radius: 4px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   color: #fff;
-  background-image: url(Images/643.png.crdownload);
   background-size: 300px;
   background-repeat: no-repeat;
   background-position: center;
