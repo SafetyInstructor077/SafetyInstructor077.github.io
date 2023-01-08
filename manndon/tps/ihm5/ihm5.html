@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ihm5.css">
+    <title>IHM Web 5</title>
+</head>
+<body>
+    <div class="intro">
+        <h2>IHM Web 5: Les Formulaires</h2>
+        <h3>Séance 4 - Mercredi 7 Décembre</h3>
+    </div>
+    <div class="conteneur">
+        <div class="contenu">
+            Pendant cette séance, j'ai étudié les formulaires dans les pages Web, qui permettent à l'utilisateur de saisir des informations à travers une interface graphique. J'ai appris que les formulaires sont définies dans un premier temps avec la balise "form". Ensuite, on peut utiliser la balise "input" afin d'ajouter des champs d'entrées pour l'utilisateur.
+            <br><br>
+            Voici un exemple de formulaire de paiement que j'ai reproduit dans le TP d'aujourd'hui:
+            <h1 id="h1_form">Formulaire de paiement</h1>
+            <p>Les champs obligatoires sont suivies par .*.</p>
+            <form>
+              <h2 class="h2_form">Informations de contact</h2>
+              <p>
+                Qualité: Monsieur <input type="radio" name="qualite" value="monsieur" /> Madame <input type="radio" name="qualite" value="madame" /><br>
+                Nom: .*. <input type="text" name="nom" /><br>
+                e-mail: .*. <input type="text" name="mail" /><br>
+                Mot de passe: .*. <input type="password" name="mot_de_passe" />
+              </p>
+              <h2 class="h2_form">Informations de paiement</h2>
+              <p>
+                Type de carte: <select name="carte">
+                  <option selected>Bleue</option>
+                  <option>Visa</option>
+                </select><br>
+                Numéro: .*. <input type="text" name="numero" /><br>
+                Validité: .*. <input type="text" name="validite" /><br>
+                <i>format mm/aa</i><br>
+                <input type="submit" value="Valider le paiement">
+              </p>
+            </form> 
+          </div>
+    </div>
+</body>
+</html>

@@ -1,12 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
 html, body {
     margin: 0;
     padding: 0;
+    transition: all 1s ease;
+    overflow-y: hidden;
+    background-color: black;
 }  
 
 
 section {
-    min-height: calc(100vh + 20px);
+    min-height: 100vh;
+    max-height: 100vh;
     display: flex;
+    transition: all 1s ease;
 }
 
 section:nth-child(1) {
@@ -20,64 +27,202 @@ section:nth-child(1) {
 
     justify-content: center;
     align-items: center;
+    transition: all 1s ease;
 }
 
-#titre {
+.fleche {
+    position: absolute;
+    width: 0;
+    height: 40px;
+    color: white;
+    border: 2px solid;
+    border-radius: 2px;
+    animation: sauteInfinie 1.5s infinite;
+  }
+
+#fleche1 {
+    top: calc(100vh - 100px);
+    left: calc(50% - 50px);
+}
+#fleche2 {
+    top: calc(100vh - 100px);
+    left: calc(50%);
+}
+#fleche3 {
+    top: calc(100vh - 100px);
+    left: calc(50% + 50px);
+}
+
+#fleche4 {
+    top: calc(200vh - 100px);
+    left: calc(50% - 50px);
+}
+#fleche5 {
+    top: calc(200vh - 100px);
+    left: calc(50%);
+}
+#fleche6 {
+    top: calc(200vh - 100px);
+    left: calc(50% + 50px);
+}
+
+.fleche:after {
+    content: " ";
+    position: absolute;
+    top: 22px;
+    left: -10px;
+    width: 16px;
+    height: 16px;
+    border-bottom: 4px solid;
+    border-right: 4px solid;
+    border-radius: 4px;
+    transform: rotateZ(45deg);
+}
+
+@keyframes sauteInfinie {
+    0% {
+      margin-top: 0;
+    }
+    50% {
+      margin-top: 20px;
+    }
+    100% {
+      margin-top: 0;
+    }
+  }
+
+#titre_intro {
     color: white;
     width: 1300px;
     text-align: center;
     background-color: rgba(222, 184, 135, 0.8);
     border-radius: 12px;
     font-size: 6em;
+    margin-top: 0;
     -webkit-text-stroke-width: 0.5px;
     -webkit-text-stroke-color: black;
 }
 
-#titre:hover {
+#titre_intro:hover {
     background-color: rgba(222, 184, 135, 0.9);
 }
 
 section:nth-child(2) {
-    background-color: rgba(0, 0, 0, 0.6);
+    display: block;
+    background-color: rgba(51, 51, 52, 0.6);
     background-image: url("images/space.jpeg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-blend-mode: darken;
+
+    text-align: center;
+    font-family: "Quicksand";
 }
 
+#titre_tp {
+    display: inline-block;
+    color: white;
+    width: 1300px;
+    height: fit-content;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 12px;
+    font-size: 5em;
+    margin-top: 6vh;
+    margin-bottom: 30px;
+    border-style: solid;
+}
+
+section:nth-child(2) > a {
+    text-decoration: none;
+}
+
+.tp {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: inline-flex;
+    border-style: solid;
+    border-radius: 20px;
+    font-weight: bold;
+    width: 400px;
+    height: 150px;
+    margin: 20px;
+    font-size: 2em;
+
+    vertical-align: top;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+#titre_tp:hover, .tp:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+} 
+
 section:nth-child(3) {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.5);
     background-image: url("images/casino_chips.jpeg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-blend-mode: darken;
-}
 
-section:nth-child(4) {
-    background-image: linear-gradient(to top, rgb(29, 29, 29), rgb(40, 40, 40));
-    text-align: center;
     justify-content: center;
     align-items: center;
 }
 
-.boutton_cercle {
-    display: block;
-    position: relative;
-    height: 250px;
-    width: 250px;
-    bottom: 15vh;
-    background-color: #bbb;
-    border-radius: 50%;;
+#presente_blackjack {
+    background-color: rgba(2, 48, 32, 0.8);
+    background-size: 85%;
+    background-position: center;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-blend-mode: darken;
+
+    border-radius: 20px;
+    border-style: solid;
+    font-family: "Times New Roman";
+    font-size: 35px;
+    padding: 20px;
+    height: fit-content;
+    width: 750px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    text-shadow:
+        -1px -1px 0 #000,  
+        1px -1px 0 #000,
+        1px 1px 0 #000,
+        1px 1px 0 #000;
 }
 
-#image_hugo {
-    height: 150px;
+#lien_blackjack {
+    display: flex;
+    margin-right: 100px;
 }
 
-#image_leopoldine {
-    height: 150px;
+.boutton_blackjack {
+    background-image: url("images/logo_blackjack.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    width: 850px;
+    height: 421px;
+    margin-top: 0;
+    margin-bottom: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.boutton_blackjack:hover {
+    transform: scale(1.2);
+}
+
+.zone_interdite {
+    min-height: 100vh;
 }

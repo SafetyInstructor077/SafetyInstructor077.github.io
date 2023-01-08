@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap');
+body {
+    background-color: rgba(0, 0, 0, 0.4);
+    background-image: url("https://static.vecteezy.com/system/resources/previews/003/555/301/original/halloween-background-with-zombies-silhouette-in-the-graveyard-free-vector.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-blend-mode: darken;
+
+    font-family: "Yeon Sung";
+    color: white;
+}
+
+.intro {
+    border-style: solid;
+    border-radius: 15px;
+    width: fit-content;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-top: 25px;
+}
+
+.intro:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+h3 {
+    margin: 20px;
+}
+
+.conteneur {
+    width: 600px;
+    border-style: solid;
+    border-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin-top: 35px;
+}
+
+.conteneur:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.contenu {
+    margin: 20px;
+    text-align: center;
+    font-size: 1.5em;
+}

@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap'); /* Permet d'utiliser la police de texte Acme */
+body {
+    background-color: rgba(0, 0, 0, 0.4); /* Change la couleur du fond de la page */
+    background-image: url("https://cdnb.artstation.com/p/assets/images/images/019/698/401/large/hans-reinhardt-highresscreenshot00036.jpg?1564631287"); /* Met une image en fond de page */
+    background-size: cover; /* Permet à l'image de prendre tout l'écran */
+    background-position: center; /* Centre l'image de fond */
+    background-repeat: no-repeat; /* Pour ne pas avoir la répétition de l'image de fond */
+    background-attachment: fixed; /* Pour "locker" l'image en place */
+    background-blend-mode: darken; /* Permet de noircir un peu l'image de fond */
+
+    font-family: "Gloria Hallelujah"; /* Change la police de texte de la page */
+    color: white; /* Change la couleur du text au blanc */
+    font-size: 1.5em; /* Rend le texte plus grand */
+}
+
+.intro {
+    border-style: solid; /* Cadre la partie intro */
+    border-radius: 15px; /* Arrondit les bords du cadre */
+    border-width: 2px; /* Rend le cadre plus petit */
+    width: fit-content; /* Réduit la longueur de la partie intro */
+    text-align: center; /* Centre le texte */
+
+    /* Centre la partie intro */
+    margin-left: auto;
+    margin-right: auto;
+
+    background-color: rgba(49, 137, 120, 0.6); /* Change la couleur de fond de la partie intro */
+    margin-top: 25px; 
+}
+
+.intro:hover {
+    background-color: rgba(49, 137, 120, 0.8); /* Change la couleur de fond lorsque la souris est dessus la partie intro */
+}
+
+h2 {
+    margin: 20px;
+    margin-bottom: 15px; /* Rapproche les éléments h2 et h3 de la partie intro */
+}
+
+h3 {
+    margin-top: 0px; /* Rapproche les éléments h2 et h3 de la partie intro */
+}
+
+.conteneur {
+    width: 700px; /* Définit la longeueur de cette partie */
+    border-style: solid; /* Cadre cette partie */
+    border-radius: 15px; /* Arrondit les coins du cadre */
+    border-width: 2px; /* Rend le cadre plus petit */
+
+    /* Centre cette partie */
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-top: 35px;
+    background-color: rgba(49, 137, 120, 0.6);  /* Change la couleur de fond de la partie conteneur */
+}
+
+.conteneur:hover {
+    background-color: rgba(49, 137, 120, 0.8); /* Change la couleur de fond lorsque la souris est dessus la partie conteneur */
+}
+
+.contenu {
+    margin: 20px;
+    text-align: center; /* Centre le texte dans le contenu */
+}
+
+#h1_form {
+    margin: 0;
+}
+
+.h2_form {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
