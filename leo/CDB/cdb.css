@@ -439,7 +439,7 @@ body {
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
-    margin-bottom: 5rem;
+    margin: 5rem;
     font-size: 2.5rem;
   }
   
@@ -467,45 +467,51 @@ body {
     background-size: cover;
     background-position: center;
   }
-  
+
   .ihm__card:nth-child(2) {
-    background-image: url("https://images.hdqwalls.com/wallpapers/autumn-tree-minimal-art-4k-7s.jpg");
-    background-size: cover;
-    background-position: center;
-    background-position-y: 70px;
-    background-repeat: no-repeat;
-    background-color: #EBEBEB;
-  }
-
-  .ihm__card:nth-child(2) h2 {
-    color: #131313;
-  }
-
-  .ihm__card:nth-child(3) {
     background-image: url("https://cdn.discordapp.com/attachments/1049816656244920432/1061835386038521966/1256694.jpg");
     background-size: cover;
     background-color: black;
     background-position: center;
-    background-position-y: -70px;
-    background-repeat: no-repeat;
+    background-position-y: 200px;
   }
 
-  .ihm__card:nth-child(4) {
+  .ihm__card:nth-child(3) {
     background-image: url("https://wallpapercave.com/wp/wp8255394.png");
     background-size: cover;
     background-position: center;
     color: #131313;
   }
 
-  .ihm__card:nth-child(5) {
+  .ihm__card:nth-child(4) {
     background-image: url("https://wallpaperaccess.com/full/4844103.jpg");
     background-size: cover;
     background-position: center;
     color: #131313;
   }
 
-  .ihm__card:nth-child(6) {
+  .ihm__card:nth-child(5) {
     background-image: url("https://w0.peakpx.com/wallpaper/776/726/HD-wallpaper-minimal-winter-amoled-battery-saver-black-dark-iceberg-mountain-mountains-trees.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .ihm__card:nth-child(6) {
+    background-image: url("https://techbeasts.com/wp-content/uploads/2020/12/wp3816034.jpg");
+    background-size: cover;
+    background-position: center;
+    background-position-y: -70px;
+    background-repeat: no-repeat;
+    color: #131313;
+    background-color: white;
+  }
+
+  .ihm__card:nth-child(6) p {
+    color: white;
+  }
+
+  .ihm__card:nth-child(7) {
+    background-image: url("https://img.freepik.com/free-vector/firework-explosions-background-design-vector_53876-62256.jpg?w=360");
     background-size: cover;
     background-position: center;
   }
