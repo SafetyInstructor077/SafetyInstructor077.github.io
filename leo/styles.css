@@ -9,12 +9,13 @@
 
 /* @media(max-width:2300px){} */
   #plane{
-    background-image: url("../Images/358140.jpg");
+    background-image: url("images/358140.jpg");
     height: auto;
     width: 100%;
     background-position-x: center;
     background-position-y: -400px;
     background-repeat: no-repeat;
+    background-attachment: fixed;
   }
   
 .navbar {
@@ -477,7 +478,7 @@
   flex-direction: column;
   justify-content: center;
   color: #fff;
-  background-image: url(../Images/643.png.crdownload);
+  background-image: url(images/643.png.crdownload);
   background-size: 300px;
   background-repeat: no-repeat;
   background-position: center;

@@ -6,6 +6,11 @@
     scroll-behavior: smooth;
 }
 
+::selection {
+  background-color: orange;
+  color: #131313;
+}
+
 /* @media(max-width:2300px){} */
 
 .navbar {
@@ -283,8 +288,137 @@ li .navbar__icons.active a:active {
 }
 }
 
-/* Services Section */
-.services {
+/* Card 3d flip section (TEST) */
+
+/* :root {
+  --primary: #FFCE00;
+  --secondary: #FE4880;
+  --dark: #212121;
+  --light: #F3F3F3;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: montserrat, sans-serif;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.card {
+  margin: 100px auto 0;
+  width: 400px;
+  height: 600px;
+  perspective: 1000px;
+}
+
+.card__inner {
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  position: relative;
+}
+
+.card__inner.is-flipped {
+  transform: rotateY(180deg);
+}
+
+
+.card__face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
+}
+
+.card__face--front {
+  background-image: linear-gradient(to bottom right, var(--primary), var(--secondary));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card__face--front h2 {
+  color: #FFF;
+  font-size: 32px;
+}
+
+.card__face--back {
+  background-color: var(--light);
+  transform: rotateY(180deg);
+}
+
+.card__content {
+  width: 100%;
+  height: 100%;
+}
+
+.card__header {
+  position: relative;
+  padding: 30px 30px 40px;
+}
+
+.card__header:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient(to bottom left, var(--primary) 10%, var(--secondary) 115%);
+  z-index: -1;
+  border-radius: 0px 0px 50% 0px;
+}
+
+.pp {
+  display: block;
+  width: 128px;
+  height: 128px;
+  margin: 0 auto 30px;
+  border-radius: 50%;
+  background-color: #FFF;
+  border: 5px solid #FFF;
+  object-fit: cover;
+}
+
+.card__header h2 {
+  color: #FFF;
+  font-size: 32px;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.card__body {
+  padding: 30px;
+}
+
+.card__body h3 {
+  color: var(--dark);
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.card__body p {
+  color: var(--dark);
+  font-size: 18px;
+  line-height: 1.4;
+} */
+
+/* cours Section */
+
+.tp {
     background: #131313fb;
     display: flex;
     flex-direction: column;
@@ -294,7 +428,7 @@ li .navbar__icons.active a:active {
     padding: 5.5rem 0;
   }
   
-  .services h1 {
+  .tp h1 {
     background-color: #fff;
     background-size: 100%;
     -webkit-background-clip: text;
@@ -305,13 +439,13 @@ li .navbar__icons.active a:active {
     font-size: 2.5rem;
   }
   
-  .services__wrapper {
+  .ihm__wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
   }
   
-  .services__card {
+  .ihm__card {
     margin: 10px;
     height: 425px;
     width: 300px;
@@ -320,54 +454,76 @@ li .navbar__icons.active a:active {
     flex-direction: column;
     justify-content: center;
     color: #fff;
-    background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
+    border: solid 2px #fff;
     transition: 0.3s ease-in;
   }
   
-  .services__card:nth-child(2) {
-    background: #1fa2ff; /* fallback for old browsers */
-    background: -webkit-linear-gradient(
-      to right,
-      #a6ffcb,
-      #12d8fa,
-      #1fa2ff
-    ); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(
-      to right,
-      #a6ffcb,
-      #12d8fa,
-      #1fa2ff
-    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  .ihm__card:first-child {
+    background-image: url("https://www.ultrahdwallpaper.in/uploads/converted/19/03/12/2299483599-World-Wide-Web-4K-Images-QL5-2560x1440-MM-100.jpg");
+    background-size: cover;
+    background-position: center;
   }
   
-  .services__card:nth-child(3) {
-    background-image: linear-gradient(
-      -225deg,
-      #231557 0%,
-      #44107a 29%,
-      #ff1361 67%,
-      #fff800 100%
-    );
+  .ihm__card:nth-child(2) {
+    background-image: url("https://images.hdqwalls.com/wallpapers/autumn-tree-minimal-art-4k-7s.jpg");
+    background-size: cover;
+    background-position: center;
+    background-position-y: 70px;
+    background-repeat: no-repeat;
+    background-color: #EBEBEB;
+  }
+
+  .ihm__card:nth-child(2) h2 {
+    color: #131313;
+  }
+
+  .ihm__card:nth-child(3) {
+    background-image: url("https://cdn.discordapp.com/attachments/1049816656244920432/1061835386038521966/1256694.jpg");
+    background-size: cover;
+    background-color: black;
+    background-position: center;
+    background-position-y: -70px;
+    background-repeat: no-repeat;
+  }
+
+  .ihm__card:nth-child(4) {
+    background-image: url("https://wallpapercave.com/wp/wp8255394.png");
+    background-size: cover;
+    background-position: center;
+    color: #131313;
+  }
+
+  .ihm__card:nth-child(5) {
+    background-image: url("https://wallpaperaccess.com/full/4844103.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #131313;
+  }
+
+  .ihm__card:nth-child(6) {
+    background-image: url("https://w0.peakpx.com/wallpaper/776/726/HD-wallpaper-minimal-winter-amoled-battery-saver-black-dark-iceberg-mountain-mountains-trees.jpg");
+    background-size: cover;
+    background-position: center;
   }
   
-  .services__card h2 {
+  .ihm__card h2 {
     text-align: center;
   }
   
-  .services__card p {
+  .ihm__card p {
     text-align: center;
     margin-top: 24px;
     font-size: 20px;
   }
   
-  .services__btn {
+  .ihm__btn {
     display: flex;
     justify-content: center;
     margin-top: 16px;
     text-decoration: none;
   } 
 
-  .services__card button {
+  .ihm__card button {
     color: #fff;
     padding: 14px 24px;
     border: none;
@@ -377,29 +533,29 @@ li .navbar__icons.active a:active {
     font-size: 1rem;
   }
   
-  .services__card button:hover {
+  .ihm__card button:hover {
     cursor: pointer;
   }
 
-  .services a {
+  .tp a{
     text-decoration: none;
     color: #fff;
   }
   
-  .services__card:hover {
+  .ihm__card:hover {
     transform: scale(1.075);
     transition: 0.3s ease-in;
     cursor: pointer;
   }
   
   @media screen and (max-width: 1300px) {
-    .services__wrapper {
+    .ihm__wrapper {
       grid-template-columns: 1fr 1fr;
     }
   }
   
   @media screen and (max-width: 768px) {
-    .services__wrapper {
+    .ihm__wrapper {
       grid-template-columns: 1fr;
     }
   }
