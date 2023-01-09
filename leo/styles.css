@@ -7,6 +7,11 @@
   scroll-behavior: smooth;
 }
 
+::selection {
+  background-color: orange;
+  color: #131313;
+}
+
 /* @media(max-width:2300px){} */
   #plane{
     background-image: url("images/358140.jpg");
@@ -478,7 +483,7 @@
   flex-direction: column;
   justify-content: center;
   color: #fff;
-  background-image: url(images/643.png.crdownload);
+  background-image: url(images/643.png.crdownload.png);
   background-size: 300px;
   background-repeat: no-repeat;
   background-position: center;
@@ -510,7 +515,7 @@
   flex-direction: column;
   justify-content: center;
   color: #fff;
-  background-image: url(../Images/blackjack.png);
+  background-image: url(images/...);
   background-size: 100%;
   background-position-y: 95px;
   background-repeat: no-repeat;
