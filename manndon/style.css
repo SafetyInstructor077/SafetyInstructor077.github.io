@@ -124,12 +124,12 @@ section:nth-child(2) {
 #titre_tp {
     display: inline-block;
     color: white;
-    width: 1300px;
+    width: 1000px;
     height: fit-content;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.4);
     border-radius: 12px;
-    font-size: 5em;
+    font-size: 4em;
     margin-top: 6vh;
     margin-bottom: 30px;
     border-style: solid;
@@ -146,10 +146,10 @@ section:nth-child(2) > a {
     border-style: solid;
     border-radius: 20px;
     font-weight: bold;
-    width: 400px;
-    height: 150px;
-    margin: 20px;
-    font-size: 2em;
+    width: 20vw;
+    height: 8vw;
+    margin: 10px;
+    font-size: 1.5em;
 
     vertical-align: top;
     justify-content: center;
@@ -185,14 +185,13 @@ section:nth-child(3) {
     border-radius: 20px;
     border-style: solid;
     font-family: "Times New Roman";
-    font-size: 35px;
+    font-size: 25px;
     padding: 20px;
     height: fit-content;
     width: 750px;
     margin-top: 0;
     margin-bottom: 0;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 30px;
     color: white;
     text-shadow:
         -1px -1px 0 #000,  
@@ -203,7 +202,8 @@ section:nth-child(3) {
 
 #lien_blackjack {
     display: flex;
-    margin-right: 100px;
+    margin-left: auto;
+    margin-right: 30px;
 }
 
 .boutton_blackjack {
@@ -212,8 +212,8 @@ section:nth-child(3) {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
-    width: 850px;
-    height: 421px;
+    width: 567px;
+    height: 281px;
     margin-top: 0;
     margin-bottom: 0;
     transition: all 0.3s ease-in-out;
