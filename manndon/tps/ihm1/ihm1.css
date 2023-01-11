@@ -8,6 +8,7 @@ body {
     background-attachment: fixed;
 
     font-family: "Nanum Gothic";
+    color: white;
 }
 
 .intro {
@@ -17,12 +18,12 @@ body {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    background-color: rgba(240, 248, 255, 0.9);
+    background-color: rgba(0, 0, 0, 0.8);
     margin-top: 25px;
 }
 
 .intro:hover {
-    background-color: rgb(240, 248, 255);
+    background-color: rgb(0, 0, 0, 0.9);
 }
 
 h2 {
@@ -35,12 +36,12 @@ h2 {
     border-radius: 15px;
     margin-left: auto;
     margin-right: auto;
-    background-color: rgba(240, 248, 255, 0.8);
+    background-color: rgba(0, 0, 0, 0.8);
     margin-top: 35px;
 }
 
 .conteneur:hover {
-    background-color: rgba(240, 248, 255, 0.9);
+    background-color: rgba(0, 0, 0, 0.9);
 }
 
 .contenu {
