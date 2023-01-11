@@ -469,11 +469,10 @@ body {
   }
 
   .ihm__card:nth-child(2) {
-    background-image: url("https://cdn.discordapp.com/attachments/1049816656244920432/1061835386038521966/1256694.jpg");
+    background-image: url("../images/cdbhalloween.jpg");
     background-size: cover;
     background-color: black;
     background-position: center;
-    background-position-y: 200px;
   }
 
   .ihm__card:nth-child(3) {

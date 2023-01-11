@@ -1,26 +1,17 @@
-const texte = document.querySelector("i");
-let index = 0;
-const couleur = ["darkkhaki", "red", "aqua", "chartreuse", "gold"];
-texte.style.color = couleur[index];
-function changeCouleur() {
-    index = (index + 1) % couleur.length;
-    texte.style.color = couleur[index];
-}
+document.getElementById("btn").addEventListener("click", function() {
+    // Trouver la valeur de display (video)
+    var video = document.getElementById("video");
+    var currentDisplay = video.style.display;
 
-texte.addEventListener("mouseover", changeCouleur);
-
-const secret = document.getElementById("secret");
-let nombreClick = 0;
-function montreTexte() {
-    nombreClick++;
-    if (nombreClick % 2 == 1) {
-        secret.innerHTML = "Bonjour :)";
-        secret.style.height = "50px";
+    if (currentDisplay === "none") {
+        // Si display == block alors cacher video, montrer image et changer le texte
+        video.style.display = "block";
+        document.getElementById("video2").style.display = "none";
+        document.getElementById("text__swap").innerHTML = "Si vous voulez apprendre plus sur le JS :";
+    } else {
+        // Si non, faire l'inverse
+        video.style.display = "none";
+        document.getElementById("video2").style.display = "block";
+        document.getElementById("text__swap").innerHTML = "Pour retourner au code commenter, veuillez appuyer ci-dessous : ";
     }
-    else {
-        secret.innerHTML = "";
-        secret.style.height = "20px";
-    }
-}
-
-secret.addEventListener("click", montreTexte);
+    });

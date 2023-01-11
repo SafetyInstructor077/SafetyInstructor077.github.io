@@ -1,7 +1,18 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,600italic,300,600");
 
+:root{
+    --white: #fff;
+    --dark: #131313;
+    --gray: #131313fb; 
+    --back: rgba(27, 31, 34, 0.85);
+}
+
+::selection{
+    background-color: maroon;
+}
+
 body {
-    background-image: url("https://cdn.discordapp.com/attachments/1049816656244920432/1061788787954417804/benjamin-voros-wITd9_eDTw8-unsplash.jpg");
+    background-image: url("../../images/ihmhalloween.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -10,14 +21,13 @@ body {
 }
 
 #container {
-    position: absolute;
     margin: auto;
+    margin-top: 10rem;
     border-radius: 15px;
     width: fit-content;
     padding: 4.5rem 2.5rem 1.5rem 2.5rem ;
-    max-width: 100%;
-    color: #fff;
-    background-color: rgba(27, 31, 34, 0.85);
+    color: var(--white);
+    background-color: var(--back);
     border-radius: 10px;
     position: absolute;
     top: 50%;
@@ -35,7 +45,7 @@ body {
 
 h2{
     margin-bottom: 20px;
-    border-bottom: solid 1px #ffffff;
+    border-bottom: solid 1px var(--white);
     width: -moz-max-content;
     width: -webkit-max-content;
     width: -ms-max-content;
@@ -48,4 +58,9 @@ h2{
     margin: 20px;
     font-size: 1.25rem;
     text-align: center;
+}
+
+.para a {
+    text-decoration: none;
+    color: aqua;
 }
