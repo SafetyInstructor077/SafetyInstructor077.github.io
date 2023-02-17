@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Poppins&family=Roboto:wght@300&display=swap');
+:root {
+    --black: #131313;
+    --offblack: #29292b;
+    --grey: rgb(174, 174, 174);
+    --greyback: rgb(174,174,174,0.3);
+    --white: #fff;
+  }
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--black);
+  color: var(--white);
+  height: 100vh;
+  overflow: hidden;
+}
+
+.dycalendar {
+  height:100%;
+  width:100%;
+  background: var(--offblack);
+  border-radius:20px;
+  padding-bottom:25px;
+  box-shadow: rgba(255, 255, 255, 0.2) 0px 12px 28px 0px,
+   rgba(255, 255, 255, 0.1) 0px 2px 4px 0px, 
+   rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+  }
+  
+  .dycalendar table{
+  margin:30px 20px 10px 10px;        
+  }
+  
+  .dycalendar table tr:first-child td{
+   color:var(--grey);
+  }
+  
+  .dycalendar table td{
+  height:55px;   
+  width:55px;
+  border-radius:5px;    
+  font-size:25px;
+  cursor:pointer;
+  position:relative;
+  top:10px;
+  font-family: 'poppins', sans-serif;
+  }
+  
+  
+  .dycalendar table td:hover{
+  background: var(--greyback);
+  transform: scale(115%);
+  transition:all .2s ease-out;
+  }
+  
+  table{
+      border-spacing: 15px;
+  }
+  .dycalendar-month-container{font-size: 35px;}
+  .dycalendar-prev-next-btn.next-btn, .prev-btn{
+      padding: 10px 25px;
+      background:none;
+      color:var(--grey);
+      border-radius:10px;
+      margin-top:-10px;
+      margin-left:10px;
+      transition: all 0.3s ease-in-out;
+  }
+  
+  .dycalendar .next-btn{
+   margin-right:10px;        
+  }
+  
+  .dycalendar-prev-next-btn.next-btn:hover{
+      background:var(--greyback);
+  }
+  .dycalendar-prev-next-btn.prev-btn:hover{
+      background: var(--greyback);
+  }
+  
+  .dycalendar .dycalendar-today-date{   
+  background:#e78721;
+  border-radius:10px;
+  color:white;
+  }
+  
+  .dycalendar .dycalendar-today-date:hover{
+  background:#ff9626;
+  }
+  
+  .dycalendar-header{
+  position:relative;
+  top:25px;
+  font-family: 'poppins', sans-serif;
+  }
